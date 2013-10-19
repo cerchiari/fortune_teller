@@ -1,4 +1,9 @@
 FortuneTeller::Application.routes.draw do
+
+    get("/lucky_numbers", { :controller => "fortune", :action => "rand_numbers"})
+
+end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -39,7 +44,7 @@ FortuneTeller::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
@@ -53,4 +58,4 @@ FortuneTeller::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+
