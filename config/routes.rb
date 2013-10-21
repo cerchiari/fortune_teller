@@ -1,7 +1,7 @@
 FortuneTeller::Application.routes.draw do
-
     get("/lucky_numbers", { :controller => "fortune", :action => "rand_numbers"})
-
+    get("/horoscopes", { :controller => "fortune", :action => "pag_horoscopes"})
+    get("/horoscopes/:sign", { :controller => "fortune", :action => "pag_horoscopes_sign"})
 end
 
   # The priority is based upon order of creation: first created -> highest priority.

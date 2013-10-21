@@ -7,4 +7,13 @@ class FortuneController < ApplicationController
     @lucky_numbers_5 = rand(1..100)
     render 'rand_numbers'
   end
+
+  def pag_horoscopes
+    render 'pag_horoscopes'
+  end
+
+  def pag_horoscopes_sign
+    render 'pag_horoscopes_sign'
+  end
+
 end
